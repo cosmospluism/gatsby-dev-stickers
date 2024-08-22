@@ -10,4 +10,4 @@ export default function AboutUs() {
   );
 }
 
-export const Head = () => <Seo pageTitle="About us" />;
+export const Head = () => <Seo title="About us" />;

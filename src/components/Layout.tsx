@@ -17,7 +17,7 @@ export default function Layout({ children, title }: ILayoutProps) {
             flexDirection: "row",
             gap: "20px",
             listStyle: "none",
-            margin: 20,
+            margin: "30px 20px",
           }}
         >
           <li>
@@ -31,7 +31,7 @@ export default function Layout({ children, title }: ILayoutProps) {
           </li>
         </ul>
       </nav>
-      <main>
+      <main style={{ margin: "30px 20px" }}>
         <h1 style={{ color: "#E2BFD9" }}>{title}</h1>
         {children}
       </main>
