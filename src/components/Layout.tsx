@@ -8,7 +8,7 @@ interface ILayoutProps {
 
 export default function Layout({ children, title }: ILayoutProps) {
   return (
-    <div style={{ marginLeft: 20 }}>
+    <div className="container">
       <nav>
         <ul
           style={{
@@ -31,8 +31,8 @@ export default function Layout({ children, title }: ILayoutProps) {
           </li>
         </ul>
       </nav>
-      <main style={{ margin: "30px 20px" }}>
-        <h1 style={{ color: "#E2BFD9" }}>{title}</h1>
+      <main>
+        <h1>{title}</h1>
         {children}
       </main>
     </div>

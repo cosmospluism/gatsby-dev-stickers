@@ -6,16 +6,15 @@ import { graphql, Link, PageProps } from "gatsby";
 export default function Blog({ data }: PageProps<Queries.MdxDataQuery>) {
   return (
     <Layout title="Blog">
-      <section style={{ margin: 70 }}>
+      <section className="grid">
         {data.allMdx.nodes.map((file, index) => (
           <article key={index}>
             <Link to={`/blog/${file.frontmatter?.slug}`}>
               <h2>{file.frontmatter?.title}</h2>
-              <h4 style={{ marginLeft: 300, fontWeight: 600 }}>
+              <h4>
                 A post from {file.frontmatter?.author} ({file.frontmatter?.date}
                 )
               </h4>
-              <hr />
               <p>{file.excerpt}</p>
             </Link>
           </article>

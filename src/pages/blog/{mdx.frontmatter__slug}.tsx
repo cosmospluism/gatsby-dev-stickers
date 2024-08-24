@@ -16,7 +16,7 @@ export default function BlogPost({ data, children }: IBlogPostProps) {
   );
   return (
     <Layout title="">
-      <div style={{ margin: 70 }}>
+      <div>
         <div>{children}</div>
         <GatsbyImage image={img as any} alt="mainImg" />
       </div>
